@@ -125,3 +125,7 @@ eval "$(ssh-agent)"
 # ssh-add ~/.ssh/idc/git_key
 
 . "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+alias fzf="fzf --preview 'batcat --color=always --line-range :500 {}'"

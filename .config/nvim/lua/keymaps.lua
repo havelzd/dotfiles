@@ -15,8 +15,8 @@ vim.g.mapleader = " "
 --map('n', '<C-p>', '<cmd>Telescope git_files<CR>', opts)
 --map('n', '<leader>ps', '<cmd>Telescope git_files<CR>', opts)
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
