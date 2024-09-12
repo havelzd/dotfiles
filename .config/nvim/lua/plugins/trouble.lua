@@ -33,5 +33,13 @@ return {
       desc = "Quickfix List (Trouble)",
     },
   },
-  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  opts = {
+        -- modes = {
+        --     symbols = {
+        --         win = {
+        --             size = 0.3
+        --         }
+        --     }
+        -- }
+    }, -- for default options, refer to the configuration section for custom setup.
 }
