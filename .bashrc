@@ -91,10 +91,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -121,11 +117,17 @@ if ! shopt -oq posix; then
 fi
 
 export PATH="$PATH:/opt/nvim/"
+
+# ssh stuff
 eval "$(ssh-agent)"
 # ssh-add ~/.ssh/idc/git_key
 
+
+# cargo, rust
 . "$HOME/.cargo/env"
 
+
+# fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 alias fzf="fzf --preview 'batcat --color=always --line-range :500 {}'"
