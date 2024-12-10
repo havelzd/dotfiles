@@ -94,14 +94,17 @@ return {
         --     capabilities = capabilities,
         -- })
 
-        lspconfig.angularls.setup({ capabilities = capabilities })
+        -- Setup LS
+        lspconfig.angularls.setup({
+            capabilities = capabilities,
+            root_dir = util.root_pattern("angular.json", "project.json"),
+        })
         lspconfig.lua_ls.setup({ capabilities = capabilities })
 
         lspconfig.html.setup({ capabilities = capabilities })
         lspconfig.cssls.setup({ capabilities = capabilities })
         lspconfig.ts_ls.setup({ capabilities = capabilities })
         lspconfig.lua_ls.setup({ capabilities = capabilities })
-        lspconfig.pylsp.setup({ capabilities = capabilities })
         lspconfig.rust_analyzer.setup({
             capabilities = capabilities,
             cmd = { "rust-analyzer" },
@@ -111,6 +114,7 @@ return {
             cmd = { "/usr/bin/gopls" },
         })
         lspconfig.volar.setup({ capabilities = capabilities })
+        lspconfig.flake8.setup({ capabilities = capabilities })
 
         vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
