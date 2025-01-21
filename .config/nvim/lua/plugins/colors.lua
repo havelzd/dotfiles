@@ -47,13 +47,6 @@ return {
             -- vim.cmd.colorscheme("rose-pine")
         end,
     },
-    -- {
-    --   "morhetz/gruvbox",
-    --   config = function()
-    --     vim.o.background = "dark" -- light / dark
-    --     vim.cmd.colorscheme("gruvbox")
-    --   end,
-    -- },
     {
         "xiantang/darcula-dark.nvim",
         dependencies = {
@@ -85,10 +78,10 @@ return {
             -- Optionally configure and load the colorscheme
             -- directly inside the plugin declaration.
             vim.g.gruvbox_material_enable_italic = true
-            vim.g.gruvbox_material_background = "medium" -- hard | medium | soft
-            vim.g.gruvbox_material_foreground = "mix"   -- material | mix | original
+            vim.g.gruvbox_material_background = "hard"        -- hard | medium | soft
+            vim.g.gruvbox_material_foreground = "original"    -- material | mix | original
             vim.g.gruvbox_material_transparent_background = 0 -- 0 | 1 | 2
-            vim.g.gruvbox_material_ui_contrast = "high" -- "high" | "low"
+            vim.g.gruvbox_material_ui_contrast = "high"       -- "high" | "low"
             vim.cmd.colorscheme("gruvbox-material")
         end,
     },
