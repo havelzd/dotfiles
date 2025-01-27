@@ -1,0 +1,31 @@
+lastupdatecheck: 0
+recentrepos:
+    - /home/zhavelka/dotfiles
+    - /home/zhavelka/projects/cpt-delivery
+    - /home/zhavelka/projects/keychain
+    - /home/zhavelka/projects/faldik
+    - /home/zhavelka/projects/advent_of_code
+    - /home/zhavelka/projects/vue-todo
+    - /home/zhavelka/projects/recent-file-picker.nvim
+    - /home/zhavelka/projects/aoc
+    - /home/zhavelka/lectures
+    - /home/zhavelka/projects/passtore
+    - /home/zhavelka/downloads/neovim
+    - /home/zhavelka/.config
+startuppopupversion: 5
+lastversion: 0.45.2
+customcommandshistory:
+    - git fetch
+    - git diff
+    - git log develop release-2024.04
+    - git log master release-2024.04
+    - git log FQA-635-ghost_element release-2024.04
+    - q
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+renamesimilaritythreshold: 50
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
