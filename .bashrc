@@ -131,3 +131,5 @@ eval "$(ssh-agent)"
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# NODE CA CERTS 
+export NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
