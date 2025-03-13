@@ -1,13 +1,19 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/zhavelka/dotfiles
+    - /home/zhavelka/projects/portal
+    - /home/zhavelka/projects/vue-todo
+    - /home/zhavelka/projects/sportka
+    - /home/zhavelka/projects/recent-file-picker.nvim
+    - /home/zhavelka/projects/aoc
+    - /home/zhavelka/projects/keychain2
+    - /home/zhavelka/projects/deploy
+    - /home/zhavelka/projects/barcelona-ui
+    - /home/zhavelka/projects/iac
     - /home/zhavelka/projects/cpt-delivery
     - /home/zhavelka/projects/keychain
     - /home/zhavelka/projects/faldik
     - /home/zhavelka/projects/advent_of_code
-    - /home/zhavelka/projects/vue-todo
-    - /home/zhavelka/projects/recent-file-picker.nvim
-    - /home/zhavelka/projects/aoc
     - /home/zhavelka/lectures
     - /home/zhavelka/projects/passtore
     - /home/zhavelka/downloads/neovim
@@ -22,7 +28,7 @@ customcommandshistory:
     - git log FQA-635-ghost_element release-2024.04
     - q
 hidecommandlog: false
-ignorewhitespaceindiffview: false
+ignorewhitespaceindiffview: true
 diffcontextsize: 3
 renamesimilaritythreshold: 50
 localbranchsortorder: recency

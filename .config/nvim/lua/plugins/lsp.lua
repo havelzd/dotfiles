@@ -112,7 +112,7 @@ return {
     })
     lspconfig.gopls.setup({
       capabilities = capabilities,
-      cmd = { "/usr/bin/gopls" },
+      cmd = { "/home/zhavelka/go/bin/gopls" },
     })
     lspconfig.volar.setup({ capabilities = capabilities })
     lspconfig.tailwindcss.setup({ capabilities = capabilities })
