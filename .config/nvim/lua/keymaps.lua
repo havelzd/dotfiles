@@ -14,3 +14,7 @@ vim.keymap.set("n", "<C-o>", "<C-o>zz")
 vim.keymap.set("n", "<C-i>", "<C-i>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+vim.keymap.set("n", "<C-t>", "<cmd>tabnew<CR>")
+vim.keymap.set("n", "<M-j>", "gT")
+vim.keymap.set("n", "<M-k>", "gt")
