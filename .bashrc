@@ -119,6 +119,10 @@ fi
 # nvim
 export PATH="$PATH:/opt/nvim/bin"
 
+
+# go bin
+export PATH="$PATH:$HOME/go/bin"
+
 # ssh stuff
 eval "$(ssh-agent)"
 # ssh-add ~/.ssh/idc/git_key
@@ -143,3 +147,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+
+# pnpm
+export PNPM_HOME="/home/zhavelka/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

@@ -21,6 +21,9 @@ return {
     require("mason").setup()
     require("mason-lspconfig").setup({
       automatic_installation = false,
+      automatic_enable = {
+        exclude = { "gopls" },
+      },
       ensure_installed = {
         "angularls",
         "lua_ls",
@@ -102,30 +105,30 @@ return {
       },
     })
 
-    lspconfig.angularls.setup({
-      capabilities = capabilities,
-      root_dir = util.root_pattern("angular.json", "project.json"),
-    })
-    lspconfig.lua_ls.setup({ capabilities = capabilities })
-
-    lspconfig.html.setup({
-      capabilities = capabilities,
-    })
-    lspconfig.cssls.setup({ capabilities = capabilities })
-    lspconfig.ts_ls.setup({
-      capabilities = capabilities,
-    })
-    lspconfig.lua_ls.setup({ capabilities = capabilities })
-    lspconfig.rust_analyzer.setup({
-      capabilities = capabilities,
-      cmd = { "rust-analyzer" },
-    })
+    -- lspconfig.angularls.setup({
+    --   capabilities = capabilities,
+    --   root_dir = util.root_pattern("angular.json", "project.json"),
+    -- })
+    -- lspconfig.lua_ls.setup({ capabilities = capabilities })
+    --
+    -- lspconfig.html.setup({
+    --   capabilities = capabilities,
+    -- })
+    -- lspconfig.cssls.setup({ capabilities = capabilities })
+    -- lspconfig.ts_ls.setup({
+    --   capabilities = capabilities,
+    -- })
+    -- lspconfig.lua_ls.setup({ capabilities = capabilities })
+    -- lspconfig.rust_analyzer.setup({
+    --   capabilities = capabilities,
+    --   cmd = { "rust-analyzer" },
+    -- })
     lspconfig.gopls.setup({
       capabilities = capabilities,
       cmd = { "/home/zhavelka/go/bin/gopls" },
     })
-    lspconfig.volar.setup({ capabilities = capabilities })
-    lspconfig.tailwindcss.setup({ capabilities = capabilities })
+    -- lspconfig.volar.setup({ capabilities = capabilities })
+    -- lspconfig.tailwindcss.setup({ capabilities = capabilities })
 
     vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
