@@ -1,22 +1,39 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/zhavelka/dotfiles
+    - /home/zhavelka/personal/repo/scrutils
+    - /home/zhavelka/work/frontegg/frontegg-configuration
     - /home/zhavelka/work/iac
     - /home/zhavelka/work/portal
+    - /home/zhavelka/work/cpt-delivery
+    - /home/zhavelka/work/analyst-service
+    - /home/zhavelka/work/ferda-admin
+    - /home/zhavelka/work/frontegg/frontegg-hosted-login-customization-server
+    - /mnt/c/Users/zhavelka/projects/ferda
     - /home/zhavelka/work/barcelona-ui
+    - /home/zhavelka/personal/repo/tchain
+    - /home/zhavelka/personal/repo/keychain3
+    - /home/zhavelka/work/web-components-library
+    - /home/zhavelka/work/test
+    - /home/zhavelka/personal/repo/keychain2
+    - /home/zhavelka/personal/repo/scrum-tool
+    - /home/zhavelka/work/deploy
+    - /home/zhavelka/work/bp-ingestion
 startuppopupversion: 5
 lastversion: 0.48.0
 customcommandshistory:
+    - q
+    - qa
+    - Qa
     - git fetch
     - git diff
     - git log develop release-2024.04
     - git log master release-2024.04
     - git log FQA-635-ghost_element release-2024.04
-    - q
 hidecommandlog: false
 ignorewhitespaceindiffview: true
-diffcontextsize: 3
-renamesimilaritythreshold: 50
+diffcontextsize: 2
+renamesimilaritythreshold: 60
 localbranchsortorder: recency
 remotebranchsortorder: alphabetical
 gitlogorder: topo-order

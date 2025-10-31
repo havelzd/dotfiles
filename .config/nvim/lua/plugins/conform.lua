@@ -20,6 +20,8 @@ return {
         go = { "gofmt" },
         html = { "prettier" },
         htmlangular = { "prettier" },
+        python = { "autopep8" },
+        vue = { "prettier" },
       },
       formatters = {
         gopls = {

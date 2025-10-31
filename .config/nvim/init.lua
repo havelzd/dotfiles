@@ -28,3 +28,12 @@ require("options")
 require("keymaps")
 require("lazy").setup("plugins")
 
+vim.lsp.enable({
+  "luals",
+  "angularls",
+  "ts_ls",
+  "gopls",
+  "cssls",
+  "eslint",
+  "html",
+})

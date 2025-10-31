@@ -1,2 +1,9 @@
 .config/github-copilot/
 .config/go/
+.config/google-*
+.config/lazygit/
+.config/lazydocker/
+.config/configstore/
+.config/nextjs-nodejs/
+.config/create-next*/
+.config/turborepo/
