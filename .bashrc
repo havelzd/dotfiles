@@ -149,7 +149,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # pnpm
-export PNPM_HOME="/home/zhavelka/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
